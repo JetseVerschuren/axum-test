@@ -62,5 +62,4 @@ async fn main() {
         .serve(router.into_make_service())
         .await
         .unwrap();
-
 }
