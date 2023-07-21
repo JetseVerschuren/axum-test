@@ -13,8 +13,10 @@ serde = "1.0.174"
 serde_json = "1.0.103"
 tokio = { version = "1.29.1", features = [
     "macros",
-    "rt-multi-thread"
+    "rt-multi-thread",
 ]}
 tracing = "0.1.37"
 tracing-subscriber = "0.3.17"
-uuid = "1.4.1"
+uuid = { version = "1.4.1", features = [
+    "serde",
+]}
